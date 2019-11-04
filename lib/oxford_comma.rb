@@ -9,6 +9,5 @@ def oxford_comma(array)
       index == array.size - 1 ? formatted_string << ", and #{word}" : formatted_string << ", #{word}"
     }
   end
-  
   formatted_string
 end
