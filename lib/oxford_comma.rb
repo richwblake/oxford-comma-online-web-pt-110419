@@ -6,7 +6,7 @@ def oxford_comma(array)
     formatted_string = array.join( " and " )
   else
     array.each_with_index { |word, index| 
-      index == array.size - 1 ? formatted_string << ", and #{word}" : formatted_string << "#{word}, "
+      index == array.size - 1 ? formatted_string << "and #{word}" : formatted_string << "#{word}, "
     }
   end
   formatted_string
